@@ -1,0 +1,31 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/Users/lucacervello/exercism/scala/bob/src/main/scala/bob.scala)[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/lucacervello/exercism/scala/bob/src/main/scala/bob.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/lucacervello/exercism/scala/bob/src/main/scala/bob.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /Users/lucacervello/exercism/scala/bob/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.3[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 45e5c8c4, interfacing (CompilerInterface) with Scala compiler version 2.10.3[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/resources.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/rt.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/sunrsasign.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jsse.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jce.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/charsets.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/jfr.jar:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/classes:/Users/lucacervello/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/lucacervello/exercism/scala/bob/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/Users/lucacervello/exercism/scala/bob/src/main/scala/bob.scala:3: value isUpperCase is not a member of String[0m
+[0m[[31merror[0m] [0m    if(arg.isUpperCase()) "hi"[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0mone error found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
