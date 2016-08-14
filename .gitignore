@@ -1,5 +1,5 @@
 project/
 target/
-./*/.ensime/
-./*/.ensime_cache/
+/*/.ensime/
+/*/.ensime_cache/
 .DS_Store
