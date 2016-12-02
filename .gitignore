@@ -2,3 +2,4 @@ project/
 target/
 /*/.ensime_cache/
 .DS_Store
+.ensime 

@@ -9,4 +9,4 @@ object Hamming {
       case (dna1, dna2) => 1 + compute(dna1.tail, dna2.tail)
     }
   }
-}
+} 
