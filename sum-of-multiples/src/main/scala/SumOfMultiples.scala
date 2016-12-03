@@ -1,5 +1,5 @@
 object SumOfMultiples {
-  def sumOfMultiples (lst : List[Int], n : Int) : Int = {
-    (1 until n).filter(x => lst.exists(x % _ == 0)).sum
+  def sumOfMultiples (factors : List[Int], limit : Int) : Int = {
+    (1 until limit).filter(x => factors.exists(x % _ == 0)).sum
   }
 }
