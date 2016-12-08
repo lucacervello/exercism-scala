@@ -7,20 +7,15 @@ class DNA (val dna : String) {
     'C' -> 0
   )
 
-  private def isValid(nucleotide : Char) = nucleotidesMap.keys.exists(_ == nucleotide)
+  private def isNotValid(nucleotide : Char) = !nucleotidesMap.keys.exists(_ == nucleotide)
 
   def count (nucleotide : Char) = {
-    if (isValid(nucleotide)) {
-      dna.find(!isValid(_)) match {
-        case Some(nuc) => Left(s"invalid nucleotide '${nuc}'")
-        case None => Right(dna.filter(_ == nucleotide).length())
-      }
-    } else Left(s"invalid nucleotide '${nucleotide}'")
+    (dna :+ nucleotide).find(isNotValid).map(n => Left(s"invalid nucleotide '${n}'"))
+      .getOrElse(Right(dna.filter(_ == nucleotide).length))
+
   }
-  def nucleotideCounts = {
-    dna.find(!isValid(_)) match {
-      case Some(nuc) => Left(s"invalid nucleotide '${nuc}'")
-      case None => Right(nucleotidesMap ++ (dna.groupBy(identity).mapValues(_.length())))
-    }
-  }
+  def nucleotideCounts = 
+    dna.find(isNotValid)
+      .map(nuc => Left(s"invalid nucleotide '${nuc}'"))
+      .getOrElse(Right(nucleotidesMap ++ (dna.groupBy(identity).mapValues(_.length()))))
 }
